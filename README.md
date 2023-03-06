@@ -1,5 +1,5 @@
-
  <h1 align="center" color='blue'>Desenvolvedores:</h1>
+
 <div align="center" style="display: inline_block"><br>
 <img width='90' src="https://github.com/Eliabesilva317.png"/>
 <img width='90' src="https://github.com/Savio-Anjos.png" />
@@ -13,7 +13,7 @@
  
  <br>
 
- <h1 align="center" color='blue'>Info Produto</h1>
+<p align='center'><img width='400' src="./.github/logo.svg"/></p>
 
  <p align='center'>
 <img src="https://img.shields.io/github/repo-size/Eliabesilva317/Infoproduto?color=3B82F6">
