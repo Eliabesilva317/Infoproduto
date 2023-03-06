@@ -1,9 +1,10 @@
  <p align='center'><img width='90'
 src="https://github.com/Eliabesilva317.png"/></p>
 
+<div style="display: inline_block">
  <p align='center'><img width='90' src="https://github.com/Savio-Anjos.png" /></p>
 
- <h1 align="center" color='blue'>Info Produto</h1>
+ <h1 align="center" color='blue'>Info Produto</h1></div>
 
  <p align='center'>
 <img src="https://img.shields.io/github/repo-size/Eliabesilva317/Infoproduto?color=3B82F6">
