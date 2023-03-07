@@ -18,6 +18,14 @@ model User {
 }
 
 model Product {
+  id          String   @id @default(cuid())
+  name        String
+  price       String
+  description String
+  createdAt   DateTime @default(now())
+}
+
+model Order {
   id        String   @id @default(cuid())
   name      String
   price     String
