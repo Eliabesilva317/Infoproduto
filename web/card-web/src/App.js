@@ -46,7 +46,7 @@ function App() {
         </div>
 
         <div>
-      <button className="button">Clique aqui</button>
+      <button className="button">Entra</button>
       </div>
 
       </div>
