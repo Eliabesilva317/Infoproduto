@@ -44,10 +44,15 @@ function App() {
             autoComplete="current-password"
           />
         </div>
+
+        <div>
+      <button className="button">Clique aqui</button>
+      </div>
+
       </div>
 
       <div className="right-pane">
-        <img src={img} alt="Capa" />
+        <img className="image" src={img} alt="Capa" />
       </div>
     </div>
   );
