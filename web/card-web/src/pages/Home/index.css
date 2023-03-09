@@ -1,13 +1,16 @@
 .container {
+  background-color: black;
   display: flex;
   width: 100vw;
   height: 100vh;
-  text-align: center;
+  
 }
 
 /* .div {
- flex: 3px;
-  background-color: black;
+ justify-content: space-around;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
 } */
 
 /* .div2 {
@@ -16,5 +19,24 @@
 } */
 
 .h1 {
+  align-self: center;
+  display: flex;
   color: blue;
+}
+
+.input2 {
+  font-size: 20px;
+  width: 300px;
+  height: 30px;
+}
+
+.gif {
+  width: 100px;
+  height: 100px;
+  background: url('../../assets/foguete.gif') no-repeat center center;
+  background-color: transparent;
+}
+.perfil {
+ width: 100px;
+ height: 100px;
 }
