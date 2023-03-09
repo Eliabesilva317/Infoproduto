@@ -5,12 +5,16 @@
   text-align: center;
 }
 
-.div {
+/* .div {
  flex: 3px;
   background-color: black;
-}
+} */
 
-.div2 {
+/* .div2 {
  flex: 7px;
   background-color: aqua;
+} */
+
+.h1 {
+  color: blue;
 }

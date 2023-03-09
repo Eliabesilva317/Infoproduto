@@ -5,7 +5,7 @@ function Home() {
 
   return (
        <div className='container'>
-        <h1>OLá helyab_silva tudo bem? </h1>
+        <h1 className='h1'>OLá Sávio tudo bem? </h1>
        </div>
   );
 }
