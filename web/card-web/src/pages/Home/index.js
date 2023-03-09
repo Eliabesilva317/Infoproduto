@@ -35,7 +35,7 @@ function Home() {
     <div className='container'>
        <img className="gif" src={img} alt="Capa" />
       <div className='div'>
-      <img src="https://github.com/Eliabesilva317.png" alt=" foto do Eliabe olhando para você de camisa preta" />
+      <img className='perfil' src="https://github.com/Eliabesilva317.png" alt=" foto do Eliabe olhando para você de camisa preta" />
       <input type="text" className='input2' value={filtro} onChange={handleFiltroChange} placeholder="Pesquisar produto" />
      
       </div>
