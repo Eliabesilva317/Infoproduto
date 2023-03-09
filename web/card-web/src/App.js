@@ -1,21 +1,9 @@
-import {BrowserRouter, Routes, Route,} from "react-router-dom";
-import Login from "./pages/login";
+import React from 'react';
+import Login from './pages/login';
+import Routes from "./Router/index";
 
-
-export function App() {
-  return(
-
-    <BrowserRouter>
-      <div className="container">
-       <Routes>
-         <Route path='/' element={<Login />}/>
-
-         {/* <Route path='/about' element={<About />}/> */}
-       </Routes>
-      </div>
-  </BrowserRouter>
-
-  )
+export default function App() {
+   return (
+       <Routes/>
+   );
 }
-
-export default App;

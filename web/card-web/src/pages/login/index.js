@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./App.css";
+import "../login/index.css"
 import img from "../../assets/preview.gif";
-
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -48,8 +47,7 @@ function Login() {
           />
         </div>
 
-        <div>
-       
+        <div>  
       <button className="button">Entra</button>
       </div>
 
