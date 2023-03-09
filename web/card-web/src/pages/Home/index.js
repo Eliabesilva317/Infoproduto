@@ -24,9 +24,9 @@ function Home() {
 
   return (
     <div className="container">
-      <img className="gif" src={img} alt="Capa" />
+      
       <div className="div">
-        <img className="perfil"
+      <img className="perfil"
           src="https://github.com/Eliabesilva317.png"
           alt=" foto do Eliabe olhando para você de camisa preta"
         />
@@ -37,6 +37,7 @@ function Home() {
           onChange={handleFiltroChange}
           placeholder="Pesquisar produto"
         />
+        <img className="gif" src={img} alt="Capa" />
       </div>
 
       {/* <ul>

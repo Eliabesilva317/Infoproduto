@@ -1,17 +1,21 @@
 .container {
-  background-color: black;
+  background-color: rgb(206, 28, 28);
   display: flex;
   width: 100vw;
   height: 100vh;
-  
+  /* flex-direction: row; */
+  flex-direction: row-reverse;
 }
 
-/* .div {
- justify-content: space-around;
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-} */
+.div {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+ align-self: flex-start;
+  flex-direction: row;
+ flex-direction: row-reverse;
+background-color: blue;
+}
 
 /* .div2 {
  flex: 7px;
@@ -32,6 +36,7 @@
 
 .gif {
   width: 100px;
+  justify-items: left;
   height: 100px;
   background: url('../../assets/foguete.gif') no-repeat center center;
   background-color: transparent;
