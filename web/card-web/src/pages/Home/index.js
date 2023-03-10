@@ -42,13 +42,9 @@ function Home() {
      </div>
      </div>
      
-    {/* telas de text  */}
+   
         <div style={{flex:9, width: "100%"}}>
       <div className="div14">
-
-        {/* <div className="bloco"></div>
-        <div className="bloco2"></div>
-        <div className="bloco3"></div> */}
 
         </div>
       </div>
