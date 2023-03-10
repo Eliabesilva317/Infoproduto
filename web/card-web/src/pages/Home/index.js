@@ -24,41 +24,6 @@ function Home() {
 
   return (
     <div className="container">
-<<<<<<< HEAD
-      <img className="gif" src={img} alt="Capa" />
-      <div className="nav">
-        <div className="div">
-          <img
-            className="perfil"
-            src="https://github.com/Eliabesilva317.png"
-            alt=" foto do Eliabe olhando para você de camisa preta"
-          />
-          <input
-            type="text"
-            className="input2"
-            value={filtro}
-            onChange={handleFiltroChange}
-            placeholder="Pesquisar produto"
-          />
-        </div>
-=======
-      
-      <div className="div">
-      <img className="perfil"
-          src="https://github.com/Eliabesilva317.png"
-          alt=" foto do Eliabe olhando para você de camisa preta"
-        />
-        <input
-          type="text"
-          className="input2"
-          value={filtro}
-          onChange={handleFiltroChange}
-          placeholder="Pesquisar produto"
-        />
-        <img className="gif" src={img} alt="Capa" />
->>>>>>> 464641ed8edbb493cbdabd561f50291ebdd5f2e0
-      </div>
-
       {/* <ul>
         {itensFiltrados.map((item) => (
           <li key={item.id}>{item.nome}</li>
