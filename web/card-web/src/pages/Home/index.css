@@ -3,7 +3,7 @@
   background-color: white;
   flex-direction: column;
  justify-content: center;
- /* justify-content: space-between; */
+ 
 }
 
 div {
@@ -65,10 +65,10 @@ div {
 }
 
 
- /* Parte dos blocos  */
+ 
 
 .div14 {background-color: blue;
-  /* box-shadow: 0 0 10px rgb(226, 25, 25); */
+  
   flex-direction: column;
   margin-top: 12px;
   margin: 5px;
