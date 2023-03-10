@@ -24,46 +24,35 @@ function Home() {
 
   return (
     <div className="container">
-<<<<<<< HEAD
-      <img className="gif" src={img} alt="Capa" />
-      <div className="nav">
-        <div className="div">
-          <img
-            className="perfil"
-            src="https://github.com/Eliabesilva317.png"
-            alt=" foto do Eliabe olhando para você de camisa preta"
-          />
-          <input
+      <div style={{flex: 1, width: "100%", backgroundColor: "white",
+    }}>
+     <div className="div">
+     <div className="div2"><img className="gif" src={img} alt="Capa" /></div>
+     <div className="div3"> 
+     <input
+            className="input"
             type="text"
-            className="input2"
             value={filtro}
             onChange={handleFiltroChange}
-            placeholder="Pesquisar produto"
+            placeholder="Pesquisar seu produto"
           />
+     <img className="image" src="https://github.com/Eliabesilva317.png" alt=" foto do Eliabe olhando para você de camisa preta" />
+     </div>
+
+     </div>
+     </div>
+     
+    {/* telas de text  */}
+        <div style={{flex:9, width: "100%"}}>
+      <div className="div14">
+
+        {/* <div className="bloco"></div>
+        <div className="bloco2"></div>
+        <div className="bloco3"></div> */}
+
         </div>
-=======
-      
-      <div className="div">
-      <img className="perfil"
-          src="https://github.com/Eliabesilva317.png"
-          alt=" foto do Eliabe olhando para você de camisa preta"
-        />
-        <input
-          type="text"
-          className="input2"
-          value={filtro}
-          onChange={handleFiltroChange}
-          placeholder="Pesquisar produto"
-        />
-        <img className="gif" src={img} alt="Capa" />
->>>>>>> 464641ed8edbb493cbdabd561f50291ebdd5f2e0
       </div>
 
-      {/* <ul>
-        {itensFiltrados.map((item) => (
-          <li key={item.id}>{item.nome}</li>
-        ))}
-      </ul> */}
     </div>
   );
 }

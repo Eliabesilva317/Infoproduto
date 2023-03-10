@@ -1,35 +1,95 @@
 .container {
-  background-color: rgb(206, 28, 28);
+  flex: 1;
+  background-color: white;
+  flex-direction: column;
+ justify-content: center;
+ /* justify-content: space-between; */
+}
+
+div {
+  justify-content: space-between;
+  background-color: white;
+  flex-direction: row;
   display: flex;
+  width: 100vw;
+  height: 30px;
+}
+
+.div {
+  justify-content: space-between;
+  background-color: white;
+  flex-direction: row;
+  box-shadow: 0 0 10px rgb(3, 3, 3);
+  display: flex;
+  width: 100vw;
+  height: 40px;
+}
+
+.div2 {
+  flex-direction: row;
+  margin-right: 7px;
+  width: 340px;
+  height: 40px;
+}
+
+.gif {
+  border-radius: 16px;
+  margin-top: 4px;
+  width: 40px;
+  height: 35px;
+  margin-left: 7px;
+}
+
+.image {
+  border-radius: 16px;
+  margin-top: 4px;
+  width: 40px;
+  height: 35px;
+  margin-right: 7px;
+}
+
+.div3 {
+  flex-direction: row;
+  margin-right: 7px;
+  width: 340px;
+  height: 40px;
+}
+
+.input {
+ font-family: 'Inter', sans-serif;
+  width: 265px;
+  height: 7px;
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 4px;
+}
+
+
+ /* Parte dos blocos  */
+
+.div14 {background-color: blue;
+  /* box-shadow: 0 0 10px rgb(226, 25, 25); */
+  flex-direction: column;
+  margin-top: 12px;
+  margin: 5px;
   width: 100vw;
   height: 100vh;
 }
 
-/* .div2 {
- flex: 7px;
+.bloco {
   background-color: aqua;
-} */
-
-.h1 {
-  align-self: center;
-  display: flex;
-  color: blue;
-}
-
-.input2 {
-  font-size: 20px;
   width: 300px;
-  height: 30px;
+  height: 300px;
 }
 
-.gif {
-  width: 100px;
-  justify-items: left;
-  height: 100px;
-  background: url("../../assets/foguete.gif") no-repeat center center;
-  background-color: transparent;
+.bloco2 {
+  background-color: rgb(255, 127, 223);
+  width: 300px;
+  height: 300px;
 }
-.perfil {
-  width: 50px;
-  height: 50px;
+
+.bloco3 {
+  background-color: brown;
+  width: 300px;
+  height: 300px;
 }
