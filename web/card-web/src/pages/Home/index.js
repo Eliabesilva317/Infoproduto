@@ -41,8 +41,7 @@ function Home() {
 
      </div>
      </div>
-     
-   
+
         <div style={{flex:9, width: "100%"}}>
       <div className="div14">
 
