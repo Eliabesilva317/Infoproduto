@@ -3,6 +3,13 @@ import "../Home/index.css";
 import img from "../../assets/foguete.gif";
 
 function Home() {
+
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
   const [itens, setItens] = useState([
     { id: 1, nome: "Item 1" },
     { id: 2, nome: "Item 2" },
@@ -23,30 +30,36 @@ function Home() {
   );
 
   return (
-    <div className="container">
-      <div style={{flex: 1, width: "100%", backgroundColor: "white",
-    }}>
-     <div className="div">
-     <div className="div2"><img className="gif" src={img} alt="Capa" /></div>
-     <div className="div3"> 
-     <input
-            className="input"
-            type="text"
-            value={filtro}
-            onChange={handleFiltroChange}
-            placeholder="Pesquisar seu produto"
-          />
-     <img className="image" src="https://github.com/Eliabesilva317.png" alt=" foto do Eliabe olhando para você de camisa preta" />
-     </div>
+    <div className="container-principal">
+          {/* Space TOP */}
+      <div className="block-0">
 
-     </div>
-     </div>
+      <div className="block-1">
+        
+      <img className="image-1" src={img} alt="Capa" />
 
-        <div style={{flex:9, width: "100%"}}>
-      <div className="div14">
-
-        </div>
       </div>
+
+      <div className="block-2">
+      <input className="input-1"
+        type="search"
+        id="searchInput"
+        placeholder="Digite o que você procura..."
+        value={searchTerm}
+        onChange={handleSearch}
+      />
+      <img className="perfil-1" src="https://github.com/Eliabesilva317.png" alt=" foto do Eliabe olhando para você de camisa preta" />
+      </div>
+
+      </div>
+
+              {/* Space down */}
+
+        <div className="space-1"> 
+        
+        <div className="space-block"> </div>
+        
+        </div> 
 
     </div>
   );
