@@ -3,8 +3,7 @@ import "../Home/index.css";
 import img from "../../assets/foguete.gif";
 
 function Home() {
-
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -31,42 +30,38 @@ function Home() {
 
   return (
     <div className="container-principal">
-          {/* Space TOP */}
+      {/* Space TOP */}
       <div className="block-0">
+        <div className="block-1">
+          <img className="image-1" src={img} alt="Capa" />
+        </div>
 
-      <div className="block-1">
-        
-      <img className="image-1" src={img} alt="Capa" />
-
+        <div className="block-2">
+          <input
+            className="input-1"
+            type="search"
+            id="searchInput"
+            placeholder="Digite o que você procura..."
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+          <img
+            className="perfil-1"
+            src="https://github.com/Eliabesilva317.png"
+            alt=" foto do Eliabe olhando para você de camisa preta"
+          />
+        </div>
       </div>
 
-      <div className="block-2">
-      <input className="input-1"
-        type="search"
-        id="searchInput"
-        placeholder="Digite o que você procura..."
-        value={searchTerm}
-        onChange={handleSearch}
-      />
-      <img className="perfil-1" src="https://github.com/Eliabesilva317.png" alt=" foto do Eliabe olhando para você de camisa preta" />
-      </div>
+      {/* Space down */}
 
-      </div>
-
-              {/* Space down */}
-
-        <div className="space-1"> 
-        
-        <div className="space-block"> </div>
-        <div className="space-block"> </div>
+      <div className="space-1">
+        <div className="space-block"> </div>      
+          <div className="space-block"> </div>
         <div className="space-block"> </div>
         <div className="space-block"> </div>
         
         </div> 
-
-
-        
-
     </div>
   );
 }
