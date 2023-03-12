@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../login/index.css";
+import "../Register/index.css";
 import img from "../../assets/preview.gif";
 
 function Register() {
@@ -32,8 +32,8 @@ function Register() {
 
         <div>
           <input
-            className="input"
-            placeholder="Email"
+            className="input name"
+            placeholder="Nome"
             type="text"
             id="name-input"
             value={name}
