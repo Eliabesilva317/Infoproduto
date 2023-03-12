@@ -48,7 +48,7 @@ function Register() {
         </div>
 
         <div>
-          <button className="button">Entra</button>
+          <button className="button">Cadastrar</button>
         </div>
       </div>
 
