@@ -1,22 +1,26 @@
-import { BrowserRouter, Router, Switch, Route, Link, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Router,
+  Switch,
+  Route,
+  Link,
+  Routes,
+} from "react-router-dom";
 import Login from "../pages/login/index";
 import Home from "../pages/Home/index";
 
-
 export function App() {
-  return(
-
+  return (
     <BrowserRouter>
       <div className="container">
-       <Routes>
-         <Route path='/' element={<Login />}/>
+        <Routes>
+          <Route path="/" element={<Login />} />
 
-         <Route path='/home' element={<Home />}/>
-       </Routes>
+          <Route path="/home" element={<Home />} />
+        </Routes>
       </div>
-  </BrowserRouter>
-
-  )
+    </BrowserRouter>
+  );
 }
 
 export default App;
