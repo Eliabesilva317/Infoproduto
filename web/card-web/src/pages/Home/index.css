@@ -59,9 +59,9 @@
 /* Space down */
 
 .space-1 {
-  justify-content: space-between;
   background-color: white;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   margin-top: 2px;
   width: 100vw;
   height: 100vh;
@@ -70,7 +70,7 @@
 
 .space-block {
   background-color: rgb(233, 14, 14);
-  margin-left: 2px;
+  margin-left: 4px;
   margin-top: 23px;
   border-radius: 7px;
   width: 300px;
