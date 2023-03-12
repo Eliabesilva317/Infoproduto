@@ -57,6 +57,15 @@ function Home() {
 
       <div className="space-1">
         <div className="space-block"> </div>
+        <div className="space-block"> </div>
+        <div className="space-block"> </div>
+        <div className="space-block"> </div>
+        <div className="space-block"> </div>
+        <div className="space-block"> </div>
+        <div className="space-block"> </div>
+        <div className="space-block"> </div>
+        <div className="space-block"> </div>
+        <div className="space-block"> </div>
       </div>
     </div>
   );
