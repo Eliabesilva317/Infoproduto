@@ -36,6 +36,10 @@
   height: 40px;
 }
 
+.input {
+  margin-bottom: 10px;
+}
+
 .input-1 {
   font-family: "Inter", sans-serif;
   margin-top: 10px;
