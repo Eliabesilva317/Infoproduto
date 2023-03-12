@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../login/index.css"
+import "../login/index.css";
 import img from "../../assets/preview.gif";
 
-function Login() {
+function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -23,7 +23,7 @@ function Login() {
   return (
     <div className="container">
       <div className="left-pane">
-        <h1 className="top">Login</h1>
+        <h1 className="top">Cadastro</h1>
         <div>
           <input
             className="input"
@@ -47,10 +47,9 @@ function Login() {
           />
         </div>
 
-        <div>  
-      <button className="button">Entra</button>
-      </div>
-
+        <div>
+          <button className="button">Entra</button>
+        </div>
       </div>
 
       <div className="right-pane">
@@ -60,4 +59,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
