@@ -56,8 +56,11 @@ function Home() {
       {/* Space down */}
 
       <div className="space-1">
+        <div className="space-block"> </div>      
+          <div className="space-block"> </div>
         <div className="space-block"> </div>
         <div className="space-block"> </div>
+<<<<<<< HEAD
         <div className="space-block"> </div>
         <div className="space-block"> </div>
         <div className="space-block"> </div>
@@ -67,6 +70,10 @@ function Home() {
         <div className="space-block"> </div>
         <div className="space-block"> </div>
       </div>
+=======
+        
+        </div> 
+>>>>>>> 3d86f7ae2de52b1338bf1f30bfb5ad283a2dfd30
     </div>
   );
 }
