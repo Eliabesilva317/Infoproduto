@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../login/index.css";
+import "../login/styles.css";
+
 import img from "../../assets/preview.gif";
 import { Link } from "react-router-dom";
 
@@ -50,6 +51,7 @@ function Login() {
 
         <div>
           <button className="button">Entra</button>
+
           <Link to="/register">Cadastro</Link>
         </div>
       </div>

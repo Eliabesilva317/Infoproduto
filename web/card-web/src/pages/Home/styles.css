@@ -73,11 +73,11 @@
   border-radius: 7px;
   width: 300px;
   height: 230px;
+  transform: skew(-10deg);
 }
 
-<<<<<<< HEAD
- /* image */
- .image {
+/* image */
+.image-3 {
   border-radius: 5px;
   margin-left: 14px;
   align-self: center;
@@ -85,7 +85,7 @@
   background-color: black;
   width: 200px;
   height: 170px;
- }
+}
 
 .favorito {
   margin-left: 14px;
@@ -101,10 +101,9 @@
   width: 200px;
   height: 30px;
   margin-left: 20px;
-  
-  
   background-color: blue;
-=======
+}
+
 .modal-overlay {
   background: #ececec;
   position: fixed;
@@ -147,5 +146,4 @@
     height: 0;
     width: 0;
   }
->>>>>>> 6c354364568044961d2d681c247d0e4e6dbd2eb9
 }

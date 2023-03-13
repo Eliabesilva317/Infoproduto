@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import "../Home/index.css";
-import img from "../../assets/foguete.gif";
 
-<<<<<<< HEAD
-=======
+import "../Home/styles.css";
+import img from "../../assets/preview-hamburger.gif";
+import { Element } from "react-scroll";
+
 import Modal from "react-modal";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoMdAdd } from "react-icons/io";
 
->>>>>>> 6c354364568044961d2d681c247d0e4e6dbd2eb9
 function Home() {
   Modal.setAppElement("#root");
   const [searchTerm, setSearchTerm] = useState("");
@@ -73,68 +72,63 @@ function Home() {
 
       {/* Space down */}
 
-      <Element id="meu-scroll" className="scroll-container">Conteúdo com scroll
-      <div className="space-1">
-
-
-        <div className="space-block">
-        <div className="favorito" >
-             <img className="image" src={img} alt="Capa" />
+      <Element id="meu-scroll" className="scroll-container">
+        Conteúdo com scroll
+        <div className="space-1">
+          <div className="space-block">
+            <div className="favorito">
+              <img className="image-3" src={img} alt="capa" />
             </div>
-             <div className="deteles" />
-           </div>  
+            <div className="deteles" />
+          </div>
 
           <div className="space-block">
-          <img className="image" src={img} alt="Capa" />
-              <div className="favorito" />
-             </div>
-
-        <div className="space-block">
-        <img className="image" src={img} alt="Capa" />
-             <div className="favorito" />
+            <img className="image-3" src={img} alt="capa" />
+            <div className="favorito" />
           </div>
-           
-        <div className="space-block">
-        <img className="image" src={img} alt="Capa" />
-        <div className="favorito" />
-             
-           </div>
-        
-        </div> 
-        </Element>
-     
 
-        {/* <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Example Modal"
-          overlayClassName={"modal-overlay"}
-          className="modal-content"
-        >
-          <AiOutlineCloseCircle
-            onClick={closeModal}
-            color="#FFF"
-            size={60}
-            className="icon-close"
-          />
-          <h2>Faça seu pedido</h2>
-          <hr />
-          <p>Nome: Batata Frita</p>
+          <div className="space-block">
+            <img className="image-3" src={img} alt="capa" />
+            <div className="favorito" />
+          </div>
 
-          <p>Preço: 20</p>
+          <div className="space-block">
+            <img className="image-3" src={img} alt="capa" />
+            <div className="favorito" />
+          </div>
+        </div>
+      </Element>
 
-          <p>Descrição: Essa batata frita...</p>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+        overlayClassName={"modal-overlay"}
+        className="modal-content"
+      >
+        <AiOutlineCloseCircle
+          onClick={closeModal}
+          color="#FFF"
+          size={60}
+          className="icon-close"
+        />
+        <h2>Faça seu pedido</h2>
+        <hr />
+        <p>Nome: Batata Frita</p>
 
-          <p>
-            Quantidade: <input type="number" />
-            <IoMdAdd color="#FFF" size={30} />
-          </p>
-        </Modal> */}
-        {/* <div className="space-block">
+        <p>Preço: 20</p>
+
+        <p>Descrição: Essa batata frita...</p>
+
+        <p>
+          Quantidade: <input type="number" />
+          <IoMdAdd color="#FFF" size={30} />
+        </p>
+      </Modal>
+      {/* <div className="space-block">
           <button onClick={openModal}>Fazer pedido</button>
         </div>
       </div> */}
-
     </div>
   );
 }
