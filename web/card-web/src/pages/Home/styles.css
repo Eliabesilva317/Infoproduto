@@ -134,11 +134,22 @@
   height: 25px;
   border-radius: 7px;
   font-size: 20px;
+  text-align: center;
 }
 
 .icon-close {
   float: right;
   cursor: pointer;
+}
+
+.count-container {
+  display: flex;
+  justify-content: column;
+}
+
+.icon-add {
+  margin-top: 40px;
+  margin-left: 5px;
 }
 
 @keyframes modal {
