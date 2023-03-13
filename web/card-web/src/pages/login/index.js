@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "../login/index.css"
+import "../login/index.css";
 import img from "../../assets/preview.gif";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -47,10 +48,10 @@ function Login() {
           />
         </div>
 
-        <div>  
-      <button className="button">Entra</button>
-      </div>
-
+        <div>
+          <button className="button">Entra</button>
+          <Link to="/register">Cadastro</Link>
+        </div>
       </div>
 
       <div className="right-pane">
