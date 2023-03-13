@@ -4,7 +4,7 @@
   box-shadow: 0 0 10px rgb(3, 3, 3);
   background-color: white;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
 }
 
 .block-0 {
@@ -21,7 +21,6 @@
   background-color: white;
   width: 30px;
   height: 40px;
-  
 }
 
 .image-1 {
@@ -37,15 +36,14 @@
   height: 40px;
 }
 
-.input-1{
-  font-family: 'Inter', sans-serif;
+.input-1 {
+  font-family: "Inter", sans-serif;
   margin-top: 10px;
   width: 265px;
   height: 7px;
   font-size: 12px;
   padding: 10px;
   border-radius: 8px;
-
 }
 
 .perfil-1 {
@@ -65,7 +63,6 @@
   margin-top: 2px;
   width: 100vw;
   height: 100vh;
-
 }
 
 .space-block {
@@ -76,10 +73,11 @@
   border-radius: 7px;
   width: 300px;
   height: 230px;
+  transform: skew(-10deg);
 }
 
- /* image */
- .image-3 {
+/* image */
+.image-3 {
   border-radius: 5px;
   margin-left: 14px;
   align-self: center;
@@ -87,7 +85,7 @@
   background-color: black;
   width: 200px;
   height: 170px;
- }
+}
 
 .favorito {
   margin-left: 14px;
@@ -103,7 +101,5 @@
   width: 200px;
   height: 30px;
   margin-left: 20px;
-  
-  
   background-color: blue;
 }

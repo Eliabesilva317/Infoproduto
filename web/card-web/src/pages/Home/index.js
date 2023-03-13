@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Home/index.css";
+import "../Home/styles.css";
 import img from "../../assets/preview-hamburger.gif";
 import { Element } from 'react-scroll';
 
@@ -62,23 +62,23 @@ function Home() {
 
         <div className="space-block">
         <div className="favorito" >
-             <img className="image-3" src={img} alt="Capa" />
+             <img className="image-3" src={img} alt="capa" />
             </div>
              <div className="deteles" />
            </div>  
 
           <div className="space-block">
-          <img className="image-3" src={img} alt="Capa" />
+          <img className="image-3" src={img} alt="capa" />
               <div className="favorito" />
              </div>
 
         <div className="space-block">
-        <img className="image-3" src={img} alt="Capa" />
+        <img className="image-3" src={img} alt="capa" />
              <div className="favorito" />
           </div>
            
         <div className="space-block">
-        <img className="image-3" src={img} alt="Capa" />
+        <img className="image-3" src={img} alt="capa" />
         <div className="favorito" />
              
            </div>
