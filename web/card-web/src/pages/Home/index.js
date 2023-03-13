@@ -4,7 +4,7 @@ import img from "../../assets/foguete.gif";
 
 import Modal from "react-modal";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { IoMdAdd } from "react-icons/io";
 
 function Home() {
   Modal.setAppElement("#root");
@@ -94,6 +94,7 @@ function Home() {
 
           <p>
             Quantidade: <input type="number" />
+            <IoMdAdd color="#FFF" size={30} />
           </p>
         </Modal>
         <div className="space-block">
