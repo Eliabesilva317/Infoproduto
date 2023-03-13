@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "../Home/index.css";
 import img from "../../assets/foguete.gif";
 
+import Modal from "react-modal";
+
 function Home() {
+  Modal.setAppElement("#root");
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (event) => {
@@ -20,6 +23,8 @@ function Home() {
 
   const [filtro, setFiltro] = useState("");
 
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   const handleFiltroChange = (event) => {
     setFiltro(event.target.value);
   };
@@ -27,6 +32,14 @@ function Home() {
   const itensFiltrados = itens.filter((item) =>
     item.nome.toLowerCase().includes(filtro.toLowerCase())
   );
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   return (
     <div className="container-principal">
@@ -56,7 +69,29 @@ function Home() {
       {/* Space down */}
 
       <div className="space-1">
-        <div className="space-block"> </div>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Example Modal"
+          overlayClassName={"modal-overlay"}
+          className="modal-content"
+        >
+          <h2>Hello - I am a modal!</h2>
+          <hr />
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <button onClick={closeModal}>Close</button>
+        </Modal>
+        <div className="space-block"></div>
+
+        <button onClick={openModal}>Open Modal</button>
       </div>
     </div>
   );
