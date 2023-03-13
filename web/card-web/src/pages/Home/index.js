@@ -62,23 +62,23 @@ function Home() {
 
         <div className="space-block">
         <div className="favorito" >
-             <img className="image" src={img} alt="Capa" />
+             <img className="image-3" src={img} alt="Capa" />
             </div>
              <div className="deteles" />
            </div>  
 
           <div className="space-block">
-          <img className="image" src={img} alt="Capa" />
+          <img className="image-3" src={img} alt="Capa" />
               <div className="favorito" />
              </div>
 
         <div className="space-block">
-        <img className="image" src={img} alt="Capa" />
+        <img className="image-3" src={img} alt="Capa" />
              <div className="favorito" />
           </div>
            
         <div className="space-block">
-        <img className="image" src={img} alt="Capa" />
+        <img className="image-3" src={img} alt="Capa" />
         <div className="favorito" />
              
            </div>
