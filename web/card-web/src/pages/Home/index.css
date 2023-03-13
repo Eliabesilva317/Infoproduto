@@ -96,6 +96,7 @@
   border-radius: 24px 150px;
   font-size: 30px;
   color: #f1f5f9;
+  animation: modal 3s;
 }
 
 .modal-content input {
@@ -108,4 +109,11 @@
 .icon-close {
   float: right;
   cursor: pointer;
+}
+
+@keyframes modal {
+  0% {
+    height: 0;
+    width: 0;
+  }
 }
