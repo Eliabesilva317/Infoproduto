@@ -147,3 +147,12 @@
     width: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .container-principal {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* image */

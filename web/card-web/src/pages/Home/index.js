@@ -82,6 +82,8 @@ function Home() {
             <div className="deteles" />
           </div>
 
+          <div className="space-block"></div>
+
           <div className="space-block">
             <img className="image-3" src={img} alt="capa" />
             <div className="favorito" />
