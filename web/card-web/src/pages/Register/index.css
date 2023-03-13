@@ -100,6 +100,7 @@ button {
   height: 50px;
   font-family: "Ubuntu", sans-serif;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 button:hover {
