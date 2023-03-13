@@ -66,10 +66,35 @@ function Home() {
 
       {/* Space down */}
 
-      {/* <Element id="meu-scroll" className="scroll-container">Conteúdo com scroll */}
+      <Element id="meu-scroll" className="scroll-container">Conteúdo com scroll
       <div className="space-1">
-        <div className="space-block"> </div>
-      </div>
+
+        <div className="space-block">
+        <div className="favorito" >
+             <img className="image" src={img} alt="Capa" />
+            </div>
+             <div className="deteles" />
+           </div>  
+
+          <div className="space-block">
+          <img className="image" src={img} alt="Capa" />
+              <div className="favorito" />
+             </div>
+
+        <div className="space-block">
+        <img className="image" src={img} alt="Capa" />
+             <div className="favorito" />
+          </div>
+           
+        <div className="space-block">
+        <img className="image" src={img} alt="Capa" />
+        <div className="favorito" />
+             
+           </div>
+        
+        </div> 
+        </Element>
+     
     </div>
   );
 }
