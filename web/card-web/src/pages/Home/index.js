@@ -3,6 +3,8 @@ import "../Home/index.css";
 import img from "../../assets/foguete.gif";
 
 import Modal from "react-modal";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Home() {
   Modal.setAppElement("#root");
@@ -76,17 +78,23 @@ function Home() {
           overlayClassName={"modal-overlay"}
           className="modal-content"
         >
+          <AiOutlineCloseCircle
+            onClick={closeModal}
+            color="#FFF"
+            size={60}
+            className="icon-close"
+          />
           <h2>Faça seu pedido</h2>
           <hr />
           <p>Nome: Batata Frita</p>
 
           <p>Preço: 20</p>
 
+          <p>Descrição: Essa batata frita...</p>
+
           <p>
             Quantidade: <input type="number" />
           </p>
-
-          <button onClick={closeModal}>Close</button>
         </Modal>
         <div className="space-block">
           <button onClick={openModal}>Fazer pedido</button>
