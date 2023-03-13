@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Register/index.css";
+import "../Register/styles.css";
 import img from "../../assets/preview.gif";
 
 function Register() {

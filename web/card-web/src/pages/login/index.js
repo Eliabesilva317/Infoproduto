@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../login/index.css"
+import "../login/styles.css";
 import img from "../../assets/preview.gif";
 
 function Login() {
@@ -47,10 +47,9 @@ function Login() {
           />
         </div>
 
-        <div>  
-      <button className="button">Entra</button>
-      </div>
-
+        <div>
+          <button className="button">Entra</button>
+        </div>
       </div>
 
       <div className="right-pane">

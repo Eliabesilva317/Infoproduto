@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "../Home/index.css";
+import "../Home/styles.css";
 import img from "../../assets/preview-hamburger.gif";
-import { Element } from 'react-scroll';
-
+import { Element } from "react-scroll";
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -57,34 +56,32 @@ function Home() {
 
       {/* Space down */}
 
-      <Element id="meu-scroll" className="scroll-container">Conteúdo com scroll
-      <div className="space-1">
-
-        <div className="space-block">
-        <div className="favorito" >
-             <img className="image" src={img} alt="Capa" />
+      <Element id="meu-scroll" className="scroll-container">
+        Conteúdo com scroll
+        <div className="space-1">
+          <div className="space-block">
+            <div className="favorito">
+              <img className="image" src={img} alt="Capa" />
             </div>
-             <div className="deteles" />
-           </div>  
+            <div className="deteles" />
+          </div>
 
           <div className="space-block">
-          <img className="image" src={img} alt="Capa" />
-              <div className="favorito" />
-             </div>
-
-        <div className="space-block">
-        <img className="image" src={img} alt="Capa" />
-             <div className="favorito" />
+            <img className="image" src={img} alt="Capa" />
+            <div className="favorito" />
           </div>
-           
-        <div className="space-block">
-        <img className="image" src={img} alt="Capa" />
-        <div className="favorito" />
-             
-           </div>
-        
-        </div> 
-        </Element>
+
+          <div className="space-block">
+            <img className="image" src={img} alt="Capa" />
+            <div className="favorito" />
+          </div>
+
+          <div className="space-block">
+            <img className="image" src={img} alt="Capa" />
+            <div className="favorito" />
+          </div>
+        </div>
+      </Element>
     </div>
   );
 }
