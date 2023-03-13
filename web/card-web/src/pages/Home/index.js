@@ -12,6 +12,8 @@ function Home() {
   Modal.setAppElement("#root");
   const [searchTerm, setSearchTerm] = useState("");
 
+  const [count, setCount] = useState(1);
+
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -43,6 +45,10 @@ function Home() {
 
   const closeModal = () => {
     setModalIsOpen(false);
+  };
+
+  const handleCount = () => {
+    setCount((count) => count + 1);
   };
 
   return (
@@ -98,6 +104,17 @@ function Home() {
             <img className="image-3" src={img} alt="capa" />
             <div className="favorito" />
           </div>
+
+          <div className="space-block">
+            <img className="image-3" src={img} alt="capa" />
+            <div className="favorito" />
+          </div>
+
+          <div className="space-block">
+            <img className="image-3" src={img} alt="capa" />
+            <div className="favorito" />
+            <button onClick={openModal}>Fazer pedido</button>
+          </div>
         </div>
       </Element>
 
@@ -116,17 +133,38 @@ function Home() {
         />
         <h2>Faça seu pedido</h2>
         <hr />
-        <p>Nome: Batata Frita</p>
 
-        <p>Preço: 20</p>
+        <div className="modal-left">
+          <p>Nome: Batata Frita</p>
 
-        <p>Descrição: Essa batata frita...</p>
+          <p>Preço: 20</p>
 
-        <p>
-          Quantidade: <input type="number" />
-          <IoMdAdd color="#FFF" size={30} />
-        </p>
+          <p>Descrição: Essa batata frita...</p>
+
+          <div className="count-container">
+            <p>
+              Quantidade:{" "}
+              <input
+                type="text"
+                value={count}
+                onChange={(e) => setCount(e.target.value)}
+              />
+            </p>
+            <IoMdAdd
+              onClick={handleCount}
+              className="icon-add"
+              color="#FFF"
+              size={30}
+            />
+          </div>
+        </div>
+
+        <div className="modal-right">
+          <h2>Total: R$ 40,00</h2>
+          <button>Finalizar pedido</button>
+        </div>
       </Modal>
+
       {/* <div className="space-block">
           <button onClick={openModal}>Fazer pedido</button>
         </div>

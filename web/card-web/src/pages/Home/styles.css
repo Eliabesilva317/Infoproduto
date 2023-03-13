@@ -134,11 +134,43 @@
   height: 25px;
   border-radius: 7px;
   font-size: 20px;
+  text-align: center;
 }
 
 .icon-close {
   float: right;
   cursor: pointer;
+}
+.icon-add {
+  margin-top: 40px;
+  margin-left: 5px;
+}
+
+.count-container {
+  display: flex;
+  justify-content: column;
+}
+
+.modal-left {
+  float: left;
+}
+
+.modal-right {
+  float: right;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.modal-right button {
+  margin-left: 90px;
+  background-color: #0891b2;
+  color: #cbd5e1;
+  transition: 1s;
+}
+
+.modal-right button:hover {
+  background-color: #67e8f9;
+  color: #000;
 }
 
 @keyframes modal {
