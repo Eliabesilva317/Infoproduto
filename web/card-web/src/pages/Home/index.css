@@ -60,10 +60,6 @@
   background-color: white;
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
-  flex-wrap: wrap;
-=======
->>>>>>> 3d86f7ae2de52b1338bf1f30bfb5ad283a2dfd30
   margin-top: 2px;
   width: 100vw;
   height: 100vh;
@@ -78,11 +74,9 @@
   height: 230px;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .container-principal {
     width: 50%;
     height: 50%;
   }
-
-  
 }
