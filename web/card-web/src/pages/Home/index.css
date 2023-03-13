@@ -70,6 +70,7 @@
 
 .space-block {
   background-color: rgb(233, 14, 14);
+  /* display: flex; */
   margin-left: 4px;
   margin-top: 23px;
   border-radius: 7px;
@@ -78,4 +79,31 @@
 }
 
  /* image */
+ .image {
+  border-radius: 5px;
+  margin-left: 14px;
+  align-self: center;
+  margin-top: 12px;
+  background-color: black;
+  width: 200px;
+  height: 170px;
+ }
 
+.favorito {
+  margin-left: 14px;
+  margin-top: 19px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5x;
+  background-color: black;
+}
+
+.deteles {
+  margin-top: 160px;
+  width: 200px;
+  height: 30px;
+  margin-left: 20px;
+  
+  
+  background-color: blue;
+}
