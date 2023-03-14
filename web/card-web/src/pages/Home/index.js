@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Home/index.css";
+import "../Home/styles.css";
 import img from "../../assets/foguete.gif";
 
 function Home() {
@@ -53,7 +53,7 @@ function Home() {
         </div>
       </div>
 
-      {/* Space down */}
+      {/* Space-1 */}
        
       <div className="space-1">
         <div className="space-block">
