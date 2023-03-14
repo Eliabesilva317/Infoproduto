@@ -52,7 +52,9 @@ function Login() {
         <div>
           <button className="button">Entra</button>
 
-          <Link to="/register">Cadastro</Link>
+          <p className="link">
+            Não possui conta? <Link to="/register">Cadastre-se!</Link>
+          </p>
         </div>
       </div>
 
