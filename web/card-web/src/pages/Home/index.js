@@ -127,7 +127,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
