@@ -54,25 +54,92 @@ function Home() {
       </div>
 
       {/* Space down */}
-
+       
       <div className="space-1">
         <div className="space-block">
-          
-           </div>  
+        <img className="image-4" src={img} alt="Capa" />
+          <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+          </div>  
 
           <div className="space-block">
-
+          <img className="image-4" src={img} alt="Capa" />
+          <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
              </div>
 
         <div className="space-block">
-
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
            </div>
 
         <div className="space-block">
-
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
            </div>
         
         </div> 
+        
+
+        {/* Space-2 */}
+
+        <div className="space-1">
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        </div>
+
+        {/* space-3 */}
+
+        <div className="space-1">
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        </div>
     </div>
   );
 }
