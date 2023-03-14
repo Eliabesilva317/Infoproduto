@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Home/styles.css";
 import img from "../../assets/preview-hamburger.gif";
-import { Element } from 'react-scroll';
+
+
 
 
 function Home() {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (event) => {
@@ -57,35 +75,104 @@ function Home() {
 
       {/* Space down */}
 
-      <Element id="meu-scroll" className="scroll-container">Conteúdo com scroll
+      
       <div className="space-1">
-
+   
         <div className="space-block">
-        <div className="favorito" >
              <img className="image-3" src={img} alt="capa" />
-            </div>
-             <div className="deteles" />
-           </div>  
-
+             <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+             </div> 
           <div className="space-block">
           <img className="image-3" src={img} alt="capa" />
-              <div className="favorito" />
+          <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
              </div>
 
         <div className="space-block">
         <img className="image-3" src={img} alt="capa" />
-             <div className="favorito" />
+        <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
           </div>
            
         <div className="space-block">
         <img className="image-3" src={img} alt="capa" />
-        <div className="favorito" />
-             
+        <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
            </div>
-        
-        </div> 
-        </Element>
-    </div>
+         </div>
+
+         {/* Space-2 */}
+
+         <div className="space-2">
+          <div className="space-block">
+          <img className="image-3" src={img} alt="capa" />
+          <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+          </div>
+
+          <div className="space-block">
+          <img className="image-3" src={img} alt="capa" />
+          <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+          </div>
+
+          <div className="space-block">
+          <img className="image-3" src={img} alt="capa" />
+          <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+          </div>
+
+          <div className="space-block">
+          <img className="image-3" src={img} alt="capa" />
+          <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+          </div>
+         </div>
+    
+              {/* Space-3 */}
+
+            <div className="space-3">
+            <div className="space-block">
+            <img className="image-3" src={img} alt="capa" />
+            <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+            </div>
+
+            <div className="space-block">
+            <img className="image-3" src={img} alt="capa" />
+            <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+            </div>
+
+            <div className="space-block">
+            <img className="image-3" src={img} alt="capa" />
+            <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+            </div>
+
+            <div className="space-block">
+            <img className="image-3" src={img} alt="capa" />
+             <div className="deteles" >
+              <p>Eliabe cruz silva</p>
+             </div>
+            </div>
+
+            </div>
+
+        </div>
+      
   );
 }
 

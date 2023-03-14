@@ -57,49 +57,81 @@
 /* Space down */
 
 .space-1 {
+  display: grid;
   background-color: white;
+  align-self: center;
   display: flex;
   flex-direction: row;
   margin-top: 2px;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  width: auto;
 }
 
 .space-block {
-  background-color: rgb(233, 14, 14);
-  /* display: flex; */
-  margin-left: 4px;
+  background-color:white;
+  align-items: center;
+  margin-left: 44px;
   margin-top: 23px;
   border-radius: 7px;
-  width: 300px;
-  height: 230px;
-  transform: skew(-10deg);
+  width: 270px;
+  height: 200px;
+  transform: skew(-17deg);
 }
 
 /* image */
 .image-3 {
-  border-radius: 5px;
-  margin-left: 14px;
+  background-color: blueviolet; /* defina a cor de fundo desejada */
+  mix-blend-mode: normal; /* mistura a cor de fundo com o conteúdo da imagem */
+  border-radius: 10px;
   align-self: center;
-  margin-top: 12px;
+  margin-top: 7px;
   background-color: black;
   width: 200px;
   height: 170px;
 }
 
-.favorito {
-  margin-left: 14px;
-  margin-top: 19px;
-  width: 20px;
-  height: 20px;
-  border-radius: 5x;
-  background-color: black;
+.deteles {
+  width: 200px;
+  height: 16px;
+  margin-left: 34px;
+  align-self: center;
+  border-radius: 5px;
+  color: brown;
+  font-family: "Inter", sans-serif;
+
+  /* background-color: blue; */
+  
 }
 
-.deteles {
-  margin-top: 160px;
-  width: 200px;
-  height: 30px;
-  margin-left: 20px;
-  background-color: blue;
+.edd {
+  margin-left: 44px;
+  margin-top: 23px;
+  width: 270px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.space-2 {
+  display: grid;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  width: auto;
+}
+
+.space-3 {
+  display: grid;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  width: auto;
 }
