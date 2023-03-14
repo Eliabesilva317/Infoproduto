@@ -1,28 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Home/styles.css";
-import img from "../../assets/preview-hamburger.gif";
-
-
-
+import img from "../../assets/foguete.gif";
 
 function Home() {
-
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.pageYOffset;
-      setScrollPosition(position);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (event) => {
@@ -73,106 +53,94 @@ function Home() {
         </div>
       </div>
 
-      {/* Space down */}
-
-      
+      {/* Space-1 */}
+       
       <div className="space-1">
-   
         <div className="space-block">
-             <img className="image-3" src={img} alt="capa" />
-             <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
-             </div> 
+        <img className="image-4" src={img} alt="Capa" />
+          <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+          </div>  
+
           <div className="space-block">
-          <img className="image-3" src={img} alt="capa" />
-          <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
+          <img className="image-4" src={img} alt="Capa" />
+          <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
              </div>
 
         <div className="space-block">
-        <img className="image-3" src={img} alt="capa" />
-        <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
           </div>
-           
-        <div className="space-block">
-        <img className="image-3" src={img} alt="capa" />
-        <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
            </div>
-         </div>
 
-         {/* Space-2 */}
-
-         <div className="space-2">
-          <div className="space-block">
-          <img className="image-3" src={img} alt="capa" />
-          <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
           </div>
+           </div>
+        
+        </div> 
+        
 
-          <div className="space-block">
-          <img className="image-3" src={img} alt="capa" />
-          <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
+        {/* Space-2 */}
+
+        <div className="space-1">
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
           </div>
+        </div>
 
-          <div className="space-block">
-          <img className="image-3" src={img} alt="capa" />
-          <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
           </div>
+        </div>
 
-          <div className="space-block">
-          <img className="image-3" src={img} alt="capa" />
-          <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
           </div>
-         </div>
-    
-              {/* Space-3 */}
+        </div>
 
-            <div className="space-3">
-            <div className="space-block">
-            <img className="image-3" src={img} alt="capa" />
-            <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
-            </div>
-
-            <div className="space-block">
-            <img className="image-3" src={img} alt="capa" />
-            <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
-            </div>
-
-            <div className="space-block">
-            <img className="image-3" src={img} alt="capa" />
-            <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
-            </div>
-
-            <div className="space-block">
-            <img className="image-3" src={img} alt="capa" />
-             <div className="deteles" >
-              <p>Eliabe cruz silva</p>
-             </div>
-            </div>
-
-            </div>
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
 
         </div>
-      
+
+        {/* space-3 */}
+
+        <div className="space-1">
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        <div className="space-block">
+        <img className="image-4" src={img} alt="Capa" />
+         <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
+          </div>
+        </div>
+
+        </div>
+    </div>
   );
 }
 
