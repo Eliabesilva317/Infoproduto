@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../login/styles.css";
+
 import img from "../../assets/preview.gif";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -49,6 +51,10 @@ function Login() {
 
         <div>
           <button className="button">Entra</button>
+
+          <p className="link">
+            Não possui conta? <Link to="/register">Cadastre-se!</Link>
+          </p>
         </div>
       </div>
 

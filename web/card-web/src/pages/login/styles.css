@@ -15,6 +15,10 @@
 .left-pane {
   flex: 6;
   background-color: blue;
+  background-image: url("../../assets/banner-lanche.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-position: 100% 80%;
 }
 
 .right-pane {
@@ -54,4 +58,14 @@ button:hover {
 image {
   width: 100vw;
   height: 100vh;
+}
+
+.link {
+  color: #fff;
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
