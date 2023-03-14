@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../Register/styles.css";
 import img from "../../assets/preview.gif";
 
+import { Link } from "react-router-dom";
+
 function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -67,6 +69,9 @@ function Register() {
 
         <div>
           <button className="button">Cadastrar</button>
+          <p className="link">
+            Já possui conta? <Link to="/">Faça login!</Link>
+          </p>
         </div>
       </div>
 
