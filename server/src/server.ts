@@ -57,7 +57,7 @@ app.get('/category', async () => {
 
   return { categories }
 })
-
+   
 
 //Deletar categoria
 app.delete('/category', async (request) => {
