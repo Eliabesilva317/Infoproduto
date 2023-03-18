@@ -159,7 +159,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -170,7 +170,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -181,7 +181,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -192,7 +192,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -207,7 +207,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -218,7 +218,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -229,7 +229,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -240,10 +240,10 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
+              alimento  Dynamic Island
             </p>
           </div>
         </div>
@@ -255,7 +255,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -266,7 +266,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -277,7 +277,7 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
+            
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
@@ -292,7 +292,9 @@ function Home() {
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
             </p>
-             <button className="button" onClick={openModal}></button>
+            <div className="button">
+             <button onClick={openModal}></button>
+             </div>
           </div>
         
         </div>
@@ -322,7 +324,7 @@ function Home() {
 
               <div className="count-container">
                 <p>
-                  Quantidade:{" "}
+                  Quantidade:
                   <input
                     type="text"
                     value={count}

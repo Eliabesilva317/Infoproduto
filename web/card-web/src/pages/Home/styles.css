@@ -100,7 +100,6 @@
 .space-text {
   border-radius: 10px;
   margin-left: 14px;
-  background-color: wheat;
   margin-right: 7px;
   width: 280px;
   height: auto;
@@ -192,6 +191,7 @@
 
 
 .image-4 {
+  background-color: #000;
   margin-top: 17px;
   border-radius: 12px;
   width: 230px;
@@ -199,11 +199,12 @@
 }
 
 .text {
-  color: black;
+  color: white;
   /* background-color: wheat; */
 }
 
 .space-text {
+  flex: 3;
   border-radius: 10px;
   margin-left: 14px;
   background-color: black;
@@ -213,6 +214,7 @@
 }
 
 .button {
-  width:50px;
-  height: 30px;
+  background-color: aliceblue;
+  flex: 7;
+  /* width: ; */
 }
