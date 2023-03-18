@@ -36,6 +36,10 @@ function Home() {
     item.nome.toLowerCase().includes(filtro.toLowerCase())
   );
 
+  const openModal = () => {  setModalIsOpen(true); };
+  const closeModal = () => { setModalIsOpen(false); }; 
+  const handleCount = () => { setCount((count) => count + 1); }
+
   return (
     <div className="container-principal">
       {/* Space TOP */}
@@ -284,15 +288,16 @@ function Home() {
         <div className="space-block">
           <img className="image-4" src={img} alt="Capa" />
           <div className="space-text">
-            {" "}
             <p className="text">
               Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
               alimento
             </p>
-            <button onClick={openModal}>Fazer pedido</button>
+             <button className="button" onClick={openModal}></button>
           </div>
+        
+        </div>
 
-          <Modal
+        <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Example Modal"
@@ -338,7 +343,7 @@ function Home() {
               <button>Finalizar pedido</button>
             </div>
           </Modal>
-        </div>
+
       </div>
     </div>
   );
