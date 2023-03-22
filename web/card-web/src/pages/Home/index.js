@@ -41,14 +41,10 @@ function Home() {
   const handleCount = () => { setCount((count) => count + 1); }
 
   return (
-    <div className="container-principal">
-      {/* Space TOP */}
-      <div className="block-0">
-        <div className="block-1">
-          <img className="image-1" src={img} alt="Capa" />
-        </div>
-
-        <div className="block-2">
+    <div className="App">
+    <div className="ROW">
+        <div className="space">
+          <div className="logo">
           <input
             className="input-1"
             type="search"
@@ -57,249 +53,179 @@ function Home() {
             value={searchTerm}
             onChange={handleSearch}
           />
+          </div>
+
+          <div className="logo-pesquisa">
           <img
             className="perfil-1"
             src="https://github.com/Eliabesilva317.png"
             alt=" foto do Eliabe olhando para você de camisa preta"
           />
+          </div>
         </div>
-      </div>
-
-      {/* Space-1 */}
-       
-      <div className="space-1">
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-          </div>  
-
-          <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-             </div>
-
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-           </div>
-
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-           </div>
-        
-        </div> 
-        
-
-        {/* Space-2 */}
 
         <div className="space-1">
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
+          <title className="space-title"></title>
+          <title className="space-title"></title>
+          <title className="space-title"></title>
+          <title className="space-title"></title>
+         
         </div>
 
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-        </div>
 
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-        </div>
+    </div>
 
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-        </div>
+        <div className="men">
 
-        </div>
-
-        {/* space-3 */}
-
-        <div className="space-1">
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-        </div>
-
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-        </div>
-
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-        <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-        </div>
-
-        <div className="space-block">
-        <img className="image-4" src={img} alt="Capa" />
-         <div className="space-text"> <p className="text">Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos alimento</p>
-          </div>
-        </div>
-
-        </div>
-
-      {/* Space down */}
-
-      <div className="space-1">
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+      <div className="dolwn">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
 
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
 
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
-
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
-            
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
-          </div>
-        </div>
+         
       </div>
 
-      {/* Space-2 */}
-
-      <div className="space-1">
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+      <div className="dolwn">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
 
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
 
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
+         
 
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
-            
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento  Dynamic Island
-            </p>
-          </div>
-        </div>
       </div>
 
-      {/* space-3 */}
-
-      <div className="space-1">
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+      <div className="dolwn">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
 
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
 
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
+          <div className="red">
+            <div className="separe">
+            <img className="image-1" src={img} alt="Capa" />
+            </div>
+    <div className="pequno">
+            <div className="separe-2">
+              <p>Pizza de caju deve te um sabor bom rsrs</p>
+            </div>
+            <div className="separe-3">
+            <button className="button-2" onClick={openModal}></button>
+            </div>
             
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
+            </div>
           </div>
-        </div>
+         
 
-        <div className="space-block">
-          <img className="image-4" src={img} alt="Capa" />
-          <div className="space-text">
-            <p className="text">
-              Olá pessoa eu estou vendendo laches gostosos, venha saboria nossos
-              alimento
-            </p>
-            <div className="button">
-             <button onClick={openModal}></button>
-             </div>
-          </div>
-        
-        </div>
-
-        <Modal
+      </div>
+      
+    
+</div>
+      <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Example Modal"
@@ -346,7 +272,8 @@ function Home() {
             </div>
           </Modal>
 
-      </div>
+
+
     </div>
   );
 }
