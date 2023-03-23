@@ -56,26 +56,29 @@ function Home() {
           />
           </div>
 
-          <div className="logo-pesquisa">
+          <div className="logo-pesquisa" >
+          
          
-             <Link to="/Perfil">Ediar</Link>
+             <Link to="/Perfil">
         
           <img
             className="perfil-1"
             src="https://github.com/Eliabesilva317.png"
             alt=" foto do Eliabe olhando para você de camisa preta"
-          />
+          /></Link>
           </div>
         </div>
 
         <div className="space-1">
-          <title className="space-title"></title>
-          <title className="space-title"></title>
-          <title className="space-title"></title>
-          <title className="space-title"></title>
+          <p className="space-title">pizza</p>
+          <p className="space-title">Hambúrguer </p>
+          <p className="space-title">Broto</p>
+          <p className="space-title">Caldo de frango </p>
+          <p className="space-title">Bebidas</p>
+          <p className="space-title">Besteira  </p>
          
         </div>
-
+        <hr />
 
     </div>
 

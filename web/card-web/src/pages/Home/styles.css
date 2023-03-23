@@ -40,14 +40,20 @@
 }
 
 .logo-pesquisa {
-  background-color: white;
+  background-color:white;
+  display: flex;
   width: 100px;
   height: 100px;
 }
 
 .editar {
   color: #0891b2;
-  margin-left: 5px;
+  background-color: #000;
+  margin-inline-start: 12px;
+  font-family: 'Inter', sans-serif;
+  
+
+  /* margin-left: 7px; */
 }
 
 .perfil-1 {
@@ -59,12 +65,15 @@
 
 .space-1 {
   background-color:white;
+  display: flex;
   width: 100vw;
   height: 100px;
 }
 
 .space-title {
-  width: 60px;
+  opacity: 0.5;
+  width: 100px;
+  color: #ececec;
   color:#155e75 ;
 }
 
