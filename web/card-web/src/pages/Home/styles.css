@@ -45,6 +45,11 @@
   height: 100px;
 }
 
+.editar {
+  color: #0891b2;
+  margin-left: 5px;
+}
+
 .perfil-1 {
   margin-top: 12px;
   border-radius: 8px;
@@ -89,7 +94,6 @@
   margin-right: 7px;
   height: 200px;
 }
-
 
 
 

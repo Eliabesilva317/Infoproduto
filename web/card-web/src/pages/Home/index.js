@@ -4,6 +4,7 @@ import img from "../../assets/foguete.gif";
 import Modal from "react-modal";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoMdAdd } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -56,6 +57,9 @@ function Home() {
           </div>
 
           <div className="logo-pesquisa">
+         
+             <Link to="/Perfil">Ediar</Link>
+        
           <img
             className="perfil-1"
             src="https://github.com/Eliabesilva317.png"
