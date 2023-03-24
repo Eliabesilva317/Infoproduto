@@ -51,15 +51,21 @@ const HomeAdm = () => {
 
           <h4>Clique no botão para ver todas as categorias.</h4>
 
-          <button type="submit">Cadastrar</button>
+          <button type="submit">Visualizar</button>
         </div>
 
         <div className="category delete-category">
-          <h1>Cadastrar categoria:</h1>
+          <h1>Deletar categoria:</h1>
           <form>
-            <input type="text" placeholder="Digite o nome da categoria" />
+            <select>
+              <option value="">Selecione uma categoria</option>
+              <option value="1">Pizzas</option>
+              <option value="2">Bebidas</option>
+              <option value="3">Comidas</option>
+              <option value="4">Outros</option>
+            </select>
             <br />
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Deletar</button>
           </form>
         </div>
       </div>

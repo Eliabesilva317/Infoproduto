@@ -1,5 +1,7 @@
 .container {
   display: block;
+  background: rgb(203,213,225);
+  background: linear-gradient(90deg, rgba(203,213,225,1) 23%, rgba(226,232,240,1) 61%);
 }
 
 .ROW {
@@ -31,19 +33,31 @@
   border: none;
   text-align: center;
   font-size: 18px;
+  border: 3px solid #065f46;
 
 }
 
-.register-category input {
+.category input:focus {
+  outline: none;
+  background: #eee; 
+}
+
+.category select {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
   border: 3px solid #065f46;
 }
 
-.register-category input:focus {
-   outline: none;
-   background: #eee; 
+.category select:focus {
+  outline: none;
+  background: #eee; 
 }
 
-.register-category button {
+.category button {
   background-image: linear-gradient(to right, #065f46 , #2dd4bf);
   border: 1px solid #FFF;
   color: #FFF;
@@ -53,6 +67,10 @@
 .list-category {
   margin-left: 30px;
   margin-right: 30px;
+}
+
+.list-category button {
+  margin-top: 35px;
 }
 
 
