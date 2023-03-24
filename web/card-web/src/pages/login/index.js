@@ -50,7 +50,8 @@ function Login() {
         </div>
 
         <div>
-          <button className="button">Entra</button>
+          <button className="button">Entrar como cliente</button>
+          <button className="button">Entrar como gerente</button>
 
           <p className="link">
             Não possui conta? <Link to="/register">Cadastre-se!</Link>
