@@ -9,6 +9,7 @@ import {
 import Login from "../pages/login/index";
 import Home from "../pages/Home/index";
 import Register from "../pages/Register";
+import HomeAdm from "../pages/HomeAdm";
 
 export function App() {
   return (
@@ -20,6 +21,8 @@ export function App() {
           <Route path="/home" element={<Home />} />
 
           <Route path="/register" element={<Register />} />
+
+          <Route path="/homeAdm" element={<HomeAdm />} />
         </Routes>
       </div>
     </BrowserRouter>
