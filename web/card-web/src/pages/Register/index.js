@@ -68,7 +68,8 @@ function Register() {
         </div>
 
         <div>
-          <button className="button">Cadastrar</button>
+          <button className="button">Cadastrar como cliente</button>
+          <button className="button">Cadastrar como gerente</button>
           <p className="link">
             Já possui conta? <Link to="/">Faça login!</Link>
           </p>
