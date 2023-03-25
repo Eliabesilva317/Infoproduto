@@ -63,6 +63,10 @@
   border: 1px solid #FFF;
   color: #FFF;
 }
+
+.category button:hover {
+  animation: shakeButton 2s infinite;
+}
   
 
 .list-category {
@@ -84,4 +88,11 @@
   to {
     transform: translateY(0);
   }
+}
+
+@keyframes shakeButton {
+  10% { transform: scale(1.05) rotate(5deg); }
+  20% { transform: scale(1.05) rotate(-5deg); }
+  30% { transform: scale(1.05) rotate(5deg); }
+  40% { transform: none; }
 }
