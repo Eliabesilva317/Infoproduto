@@ -69,7 +69,7 @@ const HomeAdm = () => {
           Produtos
         </button>
 
-        {/* Area de categorias */}
+        {/* Area de categorias ------------------------------------------------------------------ */}
 
         {visibleCategory && (
           <div className={styles.contentCategories}>
@@ -113,7 +113,7 @@ const HomeAdm = () => {
           </div>
         )}
 
-        {/* Area de produtos */}
+        {/* Area de produtos ------------------------------------------------------------------ */}
 
         {visibleProduct && (
           <div className={styles.contentCategories}>
