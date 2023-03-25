@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../HomeAdm/styles.scss";
+import styles from "./styles.module.scss";
 
 const HomeAdm = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -9,9 +9,9 @@ const HomeAdm = () => {
     setSearchTerm(event.target.value);
   };
   return (
-    <div className="container">
+    <div className={styles.container}>
       <div className="row"></div>
-      <div className="ROW">
+      <div className={styles.ROW}>
         <div className="space">
           <div className="logo">
             <input
@@ -36,8 +36,8 @@ const HomeAdm = () => {
         </div>
       </div>
 
-      <div className="content">
-        <div className="category register-category">
+      <div className={styles.content}>
+        <div className={`${styles.category} ${styles.registerCategory}`}>
           <h1>Cadastrar categoria:</h1>
           <form>
             <input type="text" placeholder="Digite o nome da categoria" />
@@ -46,7 +46,7 @@ const HomeAdm = () => {
           </form>
         </div>
 
-        <div className=" category list-category">
+        <div className={`${styles.category} ${styles.listCategory}`}>
           <h1>Visualizar categorias:</h1>
 
           <h4>Clique no botão para ver todas as categorias.</h4>
@@ -54,7 +54,7 @@ const HomeAdm = () => {
           <button type="submit">Visualizar</button>
         </div>
 
-        <div className="category delete-category">
+        <div className={`${styles.category} ${styles.deleteCategory}`}>
           <h1>Deletar categoria:</h1>
           <form>
             <select>

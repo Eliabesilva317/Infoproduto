@@ -6,6 +6,7 @@
 
 .ROW {
   height: 100px;
+  box-shadow: 0 0 10px rgb(131, 58, 58);
 }
 
 .content {
@@ -69,12 +70,12 @@
 }
   
 
-.list-category {
+.listCategory {
   margin-left: 30px;
   margin-right: 30px;
 }
 
-.list-category button {
+.listCategory button {
   margin-top: 35px;
 }
 
