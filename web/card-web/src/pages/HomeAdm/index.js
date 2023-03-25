@@ -102,7 +102,7 @@ const HomeAdm = () => {
                   <option value="1">Pizzas</option>
                   <option value="2">Bebidas</option>
                   <option value="3">Comidas</option>
-                  <option value="4">Outros</option>
+                  <option value="4">Sobremesas</option>
                 </select>
                 <br />
                 <button type="submit" className={styles.buttonProduct}>
@@ -118,9 +118,9 @@ const HomeAdm = () => {
         {visibleProduct && (
           <div className={styles.contentCategories}>
             <div className={`${styles.product} ${styles.registerCategory}`}>
-              <h1>Cadastrar categoria:</h1>
+              <h1>Cadastrar produto:</h1>
               <form>
-                <input type="text" placeholder="Digite o nome da categoria" />
+                <input type="text" placeholder="Digite o nome do produto" />
                 <br />
                 <button type="submit" className={styles.buttonCategory}>
                   Cadastrar
@@ -129,9 +129,9 @@ const HomeAdm = () => {
             </div>
 
             <div className={`${styles.product} ${styles.listProduct}`}>
-              <h1>Visualizar categorias:</h1>
+              <h1>Visualizar produtos:</h1>
 
-              <h4>Clique no botão para ver todas as categorias.</h4>
+              <h4>Clique no botão para ver todos os produtos.</h4>
 
               <button type="submit" className={styles.buttonCategory}>
                 Visualizar
@@ -139,14 +139,14 @@ const HomeAdm = () => {
             </div>
 
             <div className={`${styles.product} ${styles.deleteCategory}`}>
-              <h1>Deletar categoria:</h1>
+              <h1>Deletar produto:</h1>
               <form>
                 <select>
-                  <option value="">Selecione uma categoria</option>
-                  <option value="1">Pizzas</option>
-                  <option value="2">Bebidas</option>
-                  <option value="3">Comidas</option>
-                  <option value="4">Outros</option>
+                  <option value="">Selecione um produto</option>
+                  <option value="1">Pizza de calabresa</option>
+                  <option value="2">Suco de maracujá</option>
+                  <option value="3">Sorvete de chocolate</option>
+                  <option value="4">Batata frita</option>
                 </select>
                 <br />
                 <button type="submit" className={styles.buttonCategory}>
