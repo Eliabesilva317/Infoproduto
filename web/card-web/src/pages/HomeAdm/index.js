@@ -35,38 +35,56 @@ const HomeAdm = () => {
           </div>
         </div>
       </div>
-
       <div className={styles.content}>
-        <div className={`${styles.category} ${styles.registerCategory}`}>
-          <h1>Cadastrar categoria:</h1>
-          <form>
-            <input type="text" placeholder="Digite o nome da categoria" />
-            <br />
-            <button type="submit">Cadastrar</button>
-          </form>
-        </div>
+        <h1>Bem vindo!</h1>
+        <h2>Quais itens você deseja modificar?</h2>
 
-        <div className={`${styles.category} ${styles.listCategory}`}>
-          <h1>Visualizar categorias:</h1>
+        <button type="button" className={styles.buttonCategory}>
+          Categorias
+        </button>
 
-          <h4>Clique no botão para ver todas as categorias.</h4>
+        <button type="button" className={styles.buttonProduct}>
+          Produtos
+        </button>
 
-          <button type="submit">Visualizar</button>
-        </div>
+        <div className={styles.contentCategories}>
+          <div className={`${styles.category} ${styles.registerCategory}`}>
+            <h1>Cadastrar categoria:</h1>
+            <form>
+              <input type="text" placeholder="Digite o nome da categoria" />
+              <br />
+              <button type="submit" className={styles.buttonProduct}>
+                Cadastrar
+              </button>
+            </form>
+          </div>
 
-        <div className={`${styles.category} ${styles.deleteCategory}`}>
-          <h1>Deletar categoria:</h1>
-          <form>
-            <select>
-              <option value="">Selecione uma categoria</option>
-              <option value="1">Pizzas</option>
-              <option value="2">Bebidas</option>
-              <option value="3">Comidas</option>
-              <option value="4">Outros</option>
-            </select>
-            <br />
-            <button type="submit">Deletar</button>
-          </form>
+          <div className={`${styles.category} ${styles.listCategory}`}>
+            <h1>Visualizar categorias:</h1>
+
+            <h4>Clique no botão para ver todas as categorias.</h4>
+
+            <button type="submit" className={styles.buttonProduct}>
+              Visualizar
+            </button>
+          </div>
+
+          <div className={`${styles.category} ${styles.deleteCategory}`}>
+            <h1>Deletar categoria:</h1>
+            <form>
+              <select>
+                <option value="">Selecione uma categoria</option>
+                <option value="1">Pizzas</option>
+                <option value="2">Bebidas</option>
+                <option value="3">Comidas</option>
+                <option value="4">Outros</option>
+              </select>
+              <br />
+              <button type="submit" className={styles.buttonProduct}>
+                Deletar
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

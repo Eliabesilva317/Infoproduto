@@ -9,10 +9,32 @@
   box-shadow: 0 0 10px rgb(131, 58, 58);
 }
 
-.content {
+.contentCategories {
   display: flex;
   justify-content: center;
 }
+
+.buttonCategory {
+  background: rgb(37,164,196);
+  background: linear-gradient(90deg, rgba(37,164,196,1) 12%, rgba(14,116,144,1) 29%, rgba(21,94,117,1) 51%, rgba(37,164,196,1) 77%, rgba(0,212,255,1) 100%);-image: linear-gradient(to right, #065f46 , #2dd4bf);
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.buttonCategory:hover {
+  animation: shakeButton 2s infinite;
+}
+
+.buttonProduct {
+  background-image: linear-gradient(to right, #065f46 , #2dd4bf);
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.buttonProduct:hover {
+  animation: shakeButton 2s infinite;
+}
+
 .category {
   background: rgb(37,164,196);
   background: linear-gradient(90deg, rgba(37,164,196,1) 12%, rgba(14,116,144,1) 29%, rgba(21,94,117,1) 51%, rgba(37,164,196,1) 77%, rgba(0,212,255,1) 100%);
@@ -35,7 +57,7 @@
   text-align: center;
   font-size: 18px;
   border: 3px solid #065f46;
-
+  font-family: "Inter", sans-serif;
 }
 
 .category input:focus {
@@ -52,21 +74,12 @@
   font-size: 18px;
   border: 3px solid #065f46;
   margin-bottom: 13px;
+  text-decoration: none solid rgb(0, 0, 0);
 }
 
 .category select:focus {
   outline: none;
   background: #eee; 
-}
-
-.category button {
-  background-image: linear-gradient(to right, #065f46 , #2dd4bf);
-  border: 1px solid #FFF;
-  color: #FFF;
-}
-
-.category button:hover {
-  animation: shakeButton 2s infinite;
 }
   
 
