@@ -1,7 +1,9 @@
-.container {
-  display: block;
+body {
   background: rgb(203,213,225);
   background: linear-gradient(90deg, rgba(203,213,225,1) 23%, rgba(226,232,240,1) 61%);
+}
+.container {
+  display: block;
 }
 
 .ROW {
@@ -34,6 +36,8 @@
 .buttonProduct:hover {
   animation: shakeButton 2s infinite;
 }
+
+// Area de categorias
 
 .category {
   background: rgb(37,164,196);
@@ -89,6 +93,63 @@
 }
 
 .listCategory button {
+  margin-top: 35px;
+}
+
+//Area de produtos
+
+.product {
+  background-image: linear-gradient(to right, #065f46 , #2dd4bf);
+  color: #fff;
+  width: 400px;
+  height: 200px;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 20px;
+
+  animation: handerPage 2s;
+}
+
+.product input {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  border: 3px solid #0891b2;
+  font-family: "Inter", sans-serif;
+}
+
+.product input:focus {
+  outline: none;
+  background: #eee; 
+}
+
+.product select {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  border: 3px solid #0891b2;
+  margin-bottom: 13px;
+  text-decoration: none solid rgb(0, 0, 0);
+}
+
+.product select:focus {
+  outline: none;
+  background: #eee; 
+}
+  
+
+.listProduct {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.listProduct button {
   margin-top: 35px;
 }
 
