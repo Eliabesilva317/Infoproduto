@@ -50,7 +50,12 @@ const HomeAdm = () => {
       </div>
 
       <div className={styles.content}>
-        <h1>Bem vindo!</h1>
+        <div className={styles.titleWaves}>
+          <span>Bem vindo!</span>
+          <span>Bem vindo!</span>
+        </div>
+        <br />
+
         <h2>Quais itens você deseja modificar?</h2>
 
         <button
