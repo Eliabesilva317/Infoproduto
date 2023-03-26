@@ -135,13 +135,13 @@ const HomeAdm = () => {
                 onRequestClose={closeModal}
                 contentLabel="Example Modal"
                 overlayClassName={"modal-overlay"}
-                className="modal-content"
+                className={styles.modalContent}
               >
                 <AiOutlineCloseCircle
                   onClick={closeModal}
                   color="#FFF"
                   size={60}
-                  className="icon-close"
+                  className={styles.iconClose}
                 />
                 <h2>Categorias cadastradas</h2>
                 <hr />
