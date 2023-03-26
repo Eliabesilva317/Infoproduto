@@ -145,7 +145,7 @@ const HomeAdm = () => {
                 <h2>Categorias cadastradas</h2>
                 <hr />
 
-                <div className={styles.products}>
+                <div className={styles.categories}>
                   <ul>
                     <li>Pizzas</li>
                     <li>Bebidas</li>
@@ -224,10 +224,10 @@ const HomeAdm = () => {
                   size={60}
                   className={styles.iconClose}
                 />
-                <h2>Categorias cadastradas</h2>
+                <h2>Produtos cadastrados</h2>
                 <hr />
 
-                <div className={styles.categories}>
+                <div className={styles.products}>
                   <ul>
                     <li>Pizza de calabresa</li>
                     <li>Suco de uva</li>
