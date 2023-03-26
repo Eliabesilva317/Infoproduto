@@ -122,7 +122,11 @@ const HomeAdm = () => {
 
               <h4>Clique no botão para ver todas as categorias.</h4>
 
-              <button type="submit" className={styles.buttonProduct}>
+              <button
+                onClick={openModal}
+                type="submit"
+                className={styles.buttonProduct}
+              >
                 Visualizar
               </button>
 
@@ -139,37 +143,16 @@ const HomeAdm = () => {
                   size={60}
                   className="icon-close"
                 />
-                <h2>Faça seu pedido</h2>
+                <h2>Categorias cadastradas</h2>
                 <hr />
 
-                <div className="modal-left">
-                  <p>Nome: Batata Frita</p>
-
-                  <p>Preço: 20</p>
-
-                  <p>Descrição: Essa batata frita...</p>
-
-                  <div className="count-container">
-                    <p>
-                      Quantidade:
-                      <input
-                        type="text"
-                        value={count}
-                        onChange={(e) => setCount(e.target.value)}
-                      />
-                    </p>
-                    <IoMdAdd
-                      onClick={handleCount}
-                      className="icon-add"
-                      color="#FFF"
-                      size={30}
-                    />
-                  </div>
-                </div>
-
-                <div className="modal-right">
-                  <h2>Total: R$ 40,00</h2>
-                  <button>Finalizar pedido</button>
+                <div className={styles.categories}>
+                  <ul>
+                    <li>Pizzas</li>
+                    <li>Bebidas</li>
+                    <li>Comidas</li>
+                    <li>Sobremesas</li>
+                  </ul>
                 </div>
               </Modal>
             </div>

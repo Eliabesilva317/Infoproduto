@@ -190,6 +190,42 @@ body {
   margin-top: 35px;
 }
 
+// Modal
+
+.modal-overlay {
+  background: #ececec;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 90%;
+  height: 60%;
+  max-width: 800px;
+  background-color: #155e75;
+  padding: 50px;
+  border-radius: 24px 150px;
+  font-size: 30px;
+  color: #f1f5f9;
+  animation: modal 3s;
+}
+
+.icon-close {
+  float: right;
+  cursor: pointer;
+}
+
+
+
+
+
 
 // Animações
 
@@ -217,5 +253,12 @@ body {
 
   50% {
     clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes modal {
+  0% {
+    height: 0;
+    width: 0;
   }
 }
