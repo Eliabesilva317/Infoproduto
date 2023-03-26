@@ -1,12 +1,23 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
+import Modal from "react-modal";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { IoMdAdd } from "react-icons/io";
 
 const HomeAdm = () => {
   const [searchTerm, setSearchTerm] = useState("");
+
   const [visibleCategory, setVisibleCategory] = useState(false);
   const [visibleProduct, setVisibleProduct] = useState(false);
+
   const [themeTitle, setThemeTitle] = useState(false);
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const [count, setCount] = useState(1);
+
+  Modal.setAppElement("#root");
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -22,6 +33,16 @@ const HomeAdm = () => {
     setVisibleProduct(!visibleProduct);
     setVisibleCategory(false);
     setThemeTitle(false);
+  };
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+  const handleCount = () => {
+    setCount((count) => count + 1);
   };
 
   return (
@@ -104,6 +125,53 @@ const HomeAdm = () => {
               <button type="submit" className={styles.buttonProduct}>
                 Visualizar
               </button>
+
+              <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Example Modal"
+                overlayClassName={"modal-overlay"}
+                className="modal-content"
+              >
+                <AiOutlineCloseCircle
+                  onClick={closeModal}
+                  color="#FFF"
+                  size={60}
+                  className="icon-close"
+                />
+                <h2>Faça seu pedido</h2>
+                <hr />
+
+                <div className="modal-left">
+                  <p>Nome: Batata Frita</p>
+
+                  <p>Preço: 20</p>
+
+                  <p>Descrição: Essa batata frita...</p>
+
+                  <div className="count-container">
+                    <p>
+                      Quantidade:
+                      <input
+                        type="text"
+                        value={count}
+                        onChange={(e) => setCount(e.target.value)}
+                      />
+                    </p>
+                    <IoMdAdd
+                      onClick={handleCount}
+                      className="icon-add"
+                      color="#FFF"
+                      size={30}
+                    />
+                  </div>
+                </div>
+
+                <div className="modal-right">
+                  <h2>Total: R$ 40,00</h2>
+                  <button>Finalizar pedido</button>
+                </div>
+              </Modal>
             </div>
 
             <div className={`${styles.category} ${styles.deleteCategory}`}>
