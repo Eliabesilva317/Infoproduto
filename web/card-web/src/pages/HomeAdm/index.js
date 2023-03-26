@@ -152,6 +152,14 @@ const HomeAdm = () => {
                     <li>Bebidas</li>
                     <li>Comidas</li>
                     <li>Sobremesas</li>
+                    <li>Pizzas</li>
+                    <li>Bebidas</li>
+                    <li>Comidas</li>
+                    <li>Sobremesas</li>
+                    <li>Pizzas</li>
+                    <li>Bebidas</li>
+                    <li>Comidas</li>
+                    <li>Sobremesas</li>
                   </ul>
                 </div>
               </Modal>

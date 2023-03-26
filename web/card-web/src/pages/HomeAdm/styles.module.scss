@@ -222,7 +222,26 @@ body {
   cursor: pointer;
 }
 
+.categories {
+  max-width: 800px;
+  max-height: 350px;
+  overflow: auto;
+  border: 2px solid red;
+}
 
+.categories ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories li {
+  width: 200px;
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid blue;
+ }
 
 
 
