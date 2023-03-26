@@ -6,6 +6,7 @@ const HomeAdm = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [visibleCategory, setVisibleCategory] = useState(false);
   const [visibleProduct, setVisibleProduct] = useState(false);
+  const [themeTitle, setThemeTitle] = useState(false);
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -14,11 +15,13 @@ const HomeAdm = () => {
   const visibleCategoryController = () => {
     setVisibleCategory(!visibleCategory);
     setVisibleProduct(false);
+    setThemeTitle(true);
   };
 
   const visibleProductController = () => {
     setVisibleProduct(!visibleProduct);
     setVisibleCategory(false);
+    setThemeTitle(false);
   };
 
   return (
@@ -50,7 +53,11 @@ const HomeAdm = () => {
       </div>
 
       <div className={styles.content}>
-        <div className={styles.titleWaves}>
+        <div
+          className={`${styles.titleWaves} ${
+            themeTitle ? styles.titleWavesCategory : styles.titleWavesProduct
+          }`}
+        >
           <span>Bem vindo!</span>
           <span>Bem vindo!</span>
         </div>

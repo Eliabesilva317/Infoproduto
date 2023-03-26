@@ -30,11 +30,21 @@ body {
   -webkit-text-stroke: 0.3px #3bd9d9;
 }
 
-.titleWaves span:nth-child(2) {
+.titleWavesCategory span:nth-child(2) {
+  color: rgb(30,144,255);
+  -webkit-text-stroke: 1px #3bd9d9;
+  animation: animationWaves 3s ease-in-out infinite;
+}
+
+//Title Product
+
+.titleWavesProduct span:nth-child(2) {
   color: rgb(0, 128, 128);
   -webkit-text-stroke: 1px #3bd9d9;
   animation: animationWaves 3s ease-in-out infinite;
 }
+
+
 
 .contentCategories {
   display: flex;
