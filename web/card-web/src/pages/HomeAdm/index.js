@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import Modal from "react-modal";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { IoMdAdd } from "react-icons/io";
 
 const HomeAdm = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -135,7 +134,7 @@ const HomeAdm = () => {
                 onRequestClose={closeModal}
                 contentLabel="Example Modal"
                 overlayClassName={"modal-overlay"}
-                className={styles.modalContent}
+                className={styles.modalContentCategory}
               >
                 <AiOutlineCloseCircle
                   onClick={closeModal}
@@ -146,7 +145,7 @@ const HomeAdm = () => {
                 <h2>Categorias cadastradas</h2>
                 <hr />
 
-                <div className={styles.categories}>
+                <div className={styles.products}>
                   <ul>
                     <li>Pizzas</li>
                     <li>Bebidas</li>
@@ -204,9 +203,47 @@ const HomeAdm = () => {
 
               <h4>Clique no botão para ver todos os produtos.</h4>
 
-              <button type="submit" className={styles.buttonCategory}>
+              <button
+                onClick={openModal}
+                type="submit"
+                className={styles.buttonCategory}
+              >
                 Visualizar
               </button>
+
+              <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Example Modal"
+                overlayClassName={"modal-overlay"}
+                className={styles.modalContentProduct}
+              >
+                <AiOutlineCloseCircle
+                  onClick={closeModal}
+                  color="#FFF"
+                  size={60}
+                  className={styles.iconClose}
+                />
+                <h2>Categorias cadastradas</h2>
+                <hr />
+
+                <div className={styles.categories}>
+                  <ul>
+                    <li>Pizza de calabresa</li>
+                    <li>Suco de uva</li>
+                    <li>Torta de maçã</li>
+                    <li>Sorvete de baunilha</li>
+                    <li>Pizza de queijo</li>
+                    <li>Suco de maracujá</li>
+                    <li>Pizza de calabresa</li>
+                    <li>Suco de uva</li>
+                    <li>Torta de maçã</li>
+                    <li>Sorvete de baunilha</li>
+                    <li>Pizza de queijo</li>
+                    <li>Suco de maracujá</li>
+                  </ul>
+                </div>
+              </Modal>
             </div>
 
             <div className={`${styles.product} ${styles.deleteCategory}`}>
