@@ -283,3 +283,18 @@ body {
     width: 0;
   }
 }
+
+// Controle baseado no tamanho da tela
+@media (max-width: 1730px) {
+    .category {
+      width: 300px;
+    }
+
+    .category h1 {
+      font-size: 30px;
+    }
+
+    .listCategory button {
+      margin-top: 15px;
+    }
+}
