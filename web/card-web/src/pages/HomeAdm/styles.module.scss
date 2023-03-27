@@ -334,3 +334,73 @@ body {
     font-size: 3rem;
   }
 }
+
+
+@media (max-width: 1050px) {
+  .category {
+    width: 150px;
+    height: 80px;
+  }
+
+  .category h1 {
+    margin-top: 0;
+    font-size: 15px;
+    
+  }
+
+  .category h4 {
+    margin-top: 0;
+    font-size: 10px;
+    
+  }
+
+  .category input {
+    width: 130px;
+    height: 20px;
+    font-size: 7px;
+  }
+
+  .category select {
+    width: 130px;
+    height: 20px;
+    font-size: 7px;
+  }
+
+  .category button {
+    width: 100px;
+    height: 30px;
+    margin-right: 40px;
+  }
+
+  .listCategory button {
+    margin-bottom: 10px;
+    
+  }
+
+  .deleteCategory button {
+    margin-left: 27px;
+  }
+
+  .titleWaves span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 876px) {
+  .contentCategories {
+    display: block;
+    margin-left: 15rem;
+  }
+
+  .category {
+    width: 200px;
+  }
+
+  .registerCategory button {
+    margin-left: 30px;
+  }
+
+  .listCategory{
+    margin-left: 0;
+  }
+}
