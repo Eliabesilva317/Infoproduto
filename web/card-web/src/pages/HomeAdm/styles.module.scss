@@ -298,3 +298,39 @@ body {
       margin-top: 15px;
     }
 }
+
+
+@media (max-width: 1370px) {
+  .category {
+    width: 200px;
+    height: 160px;
+    align-items: center;
+  }
+
+  .category h1 {
+    font-size: 20px;
+    
+  }
+
+  .category input {
+    width: 150px;
+    font-size: 11px;
+  }
+
+  .category select {
+    width: 150px;
+    font-size: 11px;
+  }
+
+  .category button {
+    width: 150px;
+  }
+
+  .listCategory {
+    margin-bottom: 5px;
+  }
+
+  .titleWaves span {
+    font-size: 3rem;
+  }
+}
