@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import Modal from "react-modal";
-import ModalCategory from "../../components/ModalProduct/index";
+import ModalCategory from "../../components/ModalCategory/index";
 
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
