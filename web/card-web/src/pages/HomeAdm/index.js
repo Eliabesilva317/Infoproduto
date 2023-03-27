@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import Modal from "react-modal";
+import ModalCategory from "../../components/ModalProduct/index";
+
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const HomeAdm = () => {
@@ -15,8 +17,6 @@ const HomeAdm = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const [count, setCount] = useState(1);
-
-  Modal.setAppElement("#root");
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -142,25 +142,7 @@ const HomeAdm = () => {
                   size={60}
                   className={styles.iconClose}
                 />
-                <h2>Categorias cadastradas</h2>
-                <hr />
-
-                <div className={styles.categories}>
-                  <ul>
-                    <li>Pizzas</li>
-                    <li>Bebidas</li>
-                    <li>Comidas</li>
-                    <li>Sobremesas</li>
-                    <li>Pizzas</li>
-                    <li>Bebidas</li>
-                    <li>Comidas</li>
-                    <li>Sobremesas</li>
-                    <li>Pizzas</li>
-                    <li>Bebidas</li>
-                    <li>Comidas</li>
-                    <li>Sobremesas</li>
-                  </ul>
-                </div>
+                <ModalCategory />
               </Modal>
             </div>
 
@@ -210,6 +192,7 @@ const HomeAdm = () => {
               >
                 Visualizar
               </button>
+              {/* 
 
               <Modal
                 isOpen={modalIsOpen}
@@ -244,6 +227,7 @@ const HomeAdm = () => {
                   </ul>
                 </div>
               </Modal>
+              */}
             </div>
 
             <div className={`${styles.product} ${styles.deleteCategory}`}>

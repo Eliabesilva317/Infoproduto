@@ -1,0 +1,49 @@
+.modalContentCategory {
+    width: 90%;
+    height: 60%;
+    max-width: 800px;
+     background: rgb(37,164,196);
+    background: linear-gradient(90deg, rgba(37,164,196,1) 12%, rgba(14,116,144,1) 29%, rgba(21,94,117,1) 51%, rgba(37,164,196,1) 77%, rgba(0,212,255,1) 100%);
+    padding: 50px;
+    border-radius: 24px 150px;
+    font-size: 30px;
+    color: #f1f5f9;
+    animation: modal 3s;
+  }
+  
+  .iconClose {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .categories {
+    max-width: 800px;
+    max-height: 350px;
+    overflow: auto;
+    margin-right: 25px;
+  }
+  
+  .categories ul {
+    list-style: none;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } 
+  
+  .categories li {
+    width: 200px;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    background-image: linear-gradient(to right, #065f46 , #2dd4bf);
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #e2e8f0;
+    font-weight: bold;
+    transition: 0.75s;
+   }
+  
+   .categories li:hover {
+    transform: scale(1.10);
+   }
