@@ -1,11 +1,6 @@
-import React from "react";
-import Modal from "react-modal";
-import { useState } from "react";
 import styles from "./styles.module.scss";
-import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const ModalCategory = () => {
-  Modal.setAppElement("#root");
   return (
     <div>
       <h2>Categorias cadastradas</h2>

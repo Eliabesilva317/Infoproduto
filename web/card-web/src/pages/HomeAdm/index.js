@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import Modal from "react-modal";
 import ModalCategory from "../../components/ModalCategory/index";
+import ModalProduct from "../../components/ModalProduct/index";
 
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
@@ -192,7 +193,6 @@ const HomeAdm = () => {
               >
                 Visualizar
               </button>
-              {/* 
 
               <Modal
                 isOpen={modalIsOpen}
@@ -207,27 +207,8 @@ const HomeAdm = () => {
                   size={60}
                   className={styles.iconClose}
                 />
-                <h2>Produtos cadastrados</h2>
-                <hr />
-
-                <div className={styles.products}>
-                  <ul>
-                    <li>Pizza de calabresa</li>
-                    <li>Suco de uva</li>
-                    <li>Torta de maçã</li>
-                    <li>Sorvete de baunilha</li>
-                    <li>Pizza de queijo</li>
-                    <li>Suco de maracujá</li>
-                    <li>Pizza de calabresa</li>
-                    <li>Suco de uva</li>
-                    <li>Torta de maçã</li>
-                    <li>Sorvete de baunilha</li>
-                    <li>Pizza de queijo</li>
-                    <li>Suco de maracujá</li>
-                  </ul>
-                </div>
+                <ModalProduct />
               </Modal>
-              */}
             </div>
 
             <div className={`${styles.product} ${styles.deleteCategory}`}>
