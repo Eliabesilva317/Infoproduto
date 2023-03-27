@@ -45,6 +45,8 @@ const HomeAdm = () => {
     setCount((count) => count + 1);
   };
 
+  Modal.setAppElement("#root");
+
   return (
     <div className={styles.container}>
       <div className="row"></div>
