@@ -274,6 +274,11 @@ body {
 .iconClose {
   float: right;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.iconClose:hover {
+  transform: scale(1.09);
 }
 
 .products {
